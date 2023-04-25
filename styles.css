@@ -49,25 +49,24 @@ section {
 
 .hero-section {
   background-color: rgba(0, 0, 0, 0);
-  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 90px 0;
 }
 
 .hero-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  max-height: 100%;
   align-items: center;
 }
 
 .hero-container p {
   display: flex;
   justify-content: center;
-  font-size: 26px;
+  font-size: 28px;
   max-width: 57%;
   text-align: center;
 }
