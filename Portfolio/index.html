@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <div class="navbar from-left">
+      <a href="#AboutMe" style="display: flex"
+        ><div style="color: #47ffaf; margin-right: 4px">01.</div>
+        About Me</a
+      ><a href="#Github" style="display: flex"
+        ><div style="color: #47ffaf; margin-right: 4px">02.</div>
+        Github</a
+      >
+      <a href="#GetInTouch" style="display: flex"
+        ><div style="color: #47ffaf; margin-right: 4px">03.</div>
+        Get In Touch</a
+      >
+      <button id="resumeBtn" type="button">Resume</button>
+    </div>
+
+    <!-- About Me Section -->
+
+    <div class="hero-container">
+      <p style="color: #47ffaf; font-size: 18px">Hi, my name is</p>
+      <h1>Owen Bond.</h1>
+      <div class="hero-cta">
+        <h1>I love to build things for the web.</h1>
+      </div>
+      <p>
+        I am an aspiring front end developer and recent graduate of the
+        <a href="learncodinganywhere.com">Tech Academy.</a> Dedicated to
+        crafting visually appealing and user-friendly websites using modern
+        tools and technologies.
+      </p>
+    </div>
+    <section>
+      <div class="about-me-container" id="AboutMe">
+        <div class="about-me-content">
+          <div
+            style="display: flex; align-items: center; justify-content: center"
+          >
+            <div style="margin-right: 5px; color: #47ffaf; font-size: 21px">
+              01.
+            </div>
+            <h2>About Me</h2>
+            <hr style="border: none" />
+          </div>
+
+          <div class="about-me-text">
+            <p>
+              Hello! My name is Owen and i enjoy creating cool things that live
+              on the internet. My interest in web development started in early
+              2022 when i was reading around the room at Barnes and Nobles and
+              stumbled upon a book titled "HTML and CSS". After reading the
+              first chapter, i knew this was the career for me. I couldnt wait
+              to learn more!
+            </p>
+
+            <p>
+              Fast-forward today where i have recently graduated from The Tech
+              Academy's
+              <a
+                href="https://www.learncodinganywhere.com/webdeveloperbootcampcontact"
+                >Front End Web Development Course.</a
+              >
+              Where i was able to gain so much valuable knowledge about web
+              development.
+            </p>
+
+            <p>
+              Here are a few technologies i learned in the course, and some i
+              have been working with recently:
+            </p>
+            <div class="skill-list-container">
+              <ul class="skill-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript (ES6+)</li>
+              </ul>
+              <ul>
+                <li>React</li>
+                <li>Bootstrap</li>
+                <li>Jquery</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="about-me-image">
+          <img src="selfieee.jpg" alt="Image of Owen Bond" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Github section -->
+
+    <section>
+      <div
+        class="github-container"
+        id="Github"
+        style="background-color: aquamarine"
+      >
+        <div class="left-side">
+          <div class="left-content">
+            <div class="number" style="font-size: 21px; color: #47ffaf">
+              02.
+            </div>
+            <h2>Github</h2>
+          </div>
+          <div class="github-image-container">
+            <img src="GitHub.png" alt="dog pic" />
+          </div>
+        </div>
+        <div class="right-side">
+          <p>
+            Here you will find my
+            <a href="https://github.com/" style="color: #47ffaf">Github</a>
+            profile where you can see some of my coding projects! Please take a
+            look.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get in Touch Section -->
+    <section class="get-in-touch-section" id="GetInTouch">
+      <div class="get-in-touch-container">
+        <div class="in-touch-header">
+          <div class="number" style="color: #47ffaf; font-size: 21px">03.</div>
+          <h2>Get in touch</h2>
+        </div>
+        <p>
+          I am currently looking for a new oppertunity! Please feel free to
+          click the button below and email me. I would love to join your team!
+        </p>
+        <div id="contactFormContainer" class="form-container">
+          <div id="closeFormButton" class="close-button">&times;</div>
+          <h2>Contact Me</h2>
+          <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+        <button id="openFormButton">Say Hello</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2023 Owen Bond. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script defer src="main.js"></script>
+  </body>
+</html>
