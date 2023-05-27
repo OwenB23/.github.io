@@ -441,3 +441,76 @@ section {
 .footer-content p {
   margin: 0;
 }
+
+/* Media Queries  */
+
+@media (max-width: 391px) {
+  .navbar {
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+
+  #resumeBtn {
+    margin-right: 20px;
+    font-size: 12px;
+  }
+
+  /* Hero */
+  .hero-container {
+    width: 90%;
+    padding: 0 10px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* About me */
+  .about-me-container {
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 80%;
+    gap: 20px;
+  }
+
+  .about-me-image {
+    flex-basis: 100%;
+  }
+
+  .about-me-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .about-me-text {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  /* Github */
+  .github-container {
+    flex-direction: column;
+    width: 90%;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .left-side,
+  .right-side {
+    flex-basis: 100%;
+  }
+
+  /* Get in touch */
+  .get-in-touch-container {
+    width: 90%;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
