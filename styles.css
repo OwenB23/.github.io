@@ -123,7 +123,6 @@ html {
   display: flex;
   justify-content: space-between;
   margin-top: 220px;
-  margin-left: 150px;
   width: 60%;
   gap: 60px;
   align-items: flex-start;
@@ -215,6 +214,91 @@ html {
   transform: translateX(0);
 }
 
+/* projects section */
+
+.project-header {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+}
+
+.project-header h2 {
+  color: #ced4da;
+  margin-left: 3px;
+}
+.project-container {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0d1431;
+
+  border: 1px solid #47ffaf;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+
+  border-left: 1px solid #ccc;
+  background-color: #0d1431;
+  width: 50%;
+  height: 250px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: #ced4da;
+  padding: 20px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  font-family: "Rubik", sans-serif;
+}
+
+.tab button:hover {
+  background-color: #252c46;
+}
+
+.tab button.active {
+  background-color: #252c46;
+}
+
+.tabcontent {
+  padding: 0px 12px;
+  width: 90%;
+  border-left: none;
+  height: 300px;
+  display: none;
+  background-color: #0d1431;
+}
+
+.tabcontent h3 {
+  margin-top: 30px;
+  color: #47ffaf;
+}
+
+.tabcontent p {
+  color: #ced4da;
+  text-align: center;
+}
+
 /* GitHub */
 
 section {
@@ -228,16 +312,23 @@ section {
   width: 60%;
   margin-top: 200px;
   margin-bottom: 50px;
-  margin-right: 150px;
+
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s ease-in-out;
 }
 
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
 .left-side {
   flex-basis: 50%;
   padding: 20px;
+  padding-left: 0;
   background-color: #0d1431;
 }
 
@@ -287,6 +378,7 @@ section {
   align-items: center;
   flex-basis: 50%;
   padding: 20px;
+  padding-left: 30px;
   background-color: #0d1431;
 }
 
@@ -395,6 +487,7 @@ section {
   display: block;
   margin-bottom: 10px;
   width: 100%;
+  padding: 5px;
 }
 
 .form-container input[type="submit"] {
@@ -477,6 +570,7 @@ section {
     margin-right: auto;
     width: 80%;
     gap: 20px;
+    padding-left: 0;
   }
 
   .about-me-image {
@@ -525,5 +619,15 @@ section {
     margin-top: 50px;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .in-touch-header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-container {
+    width: 90%;
+    margin: 0 auto;
   }
 }

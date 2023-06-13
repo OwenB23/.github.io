@@ -19,12 +19,16 @@
       <a href="#AboutMe" style="display: flex"
         ><div style="color: #47ffaf; margin-right: 4px">01.</div>
         About Me</a
-      ><a href="#Github" style="display: flex"
+      ><a href="#Projects" style="display: flex"
         ><div style="color: #47ffaf; margin-right: 4px">02.</div>
-        Github</a
+        Projects</a
+      >
+      <a href="#GitHub" style="display: flex"
+        ><div style="color: #47ffaf; margin-right: 4px">03.</div>
+        GitHub</a
       >
       <a href="#GetInTouch" style="display: flex"
-        ><div style="color: #47ffaf; margin-right: 4px">03.</div>
+        ><div style="color: #47ffaf; margin-right: 4px">04.</div>
         Get In Touch</a
       >
       <button id="resumeBtn" type="button">Resume</button>
@@ -106,6 +110,40 @@
       </div>
     </section>
 
+    <!-- Projects Section -->
+    <section class="project-header show" id="projects">
+      <div class="number" style="color: #47ffaf; font-size: 21px">02.</div>
+      <h2>Some things I've Built</h2>
+    </section>
+    <section class="project-container show">
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'London')">
+          London
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Paris')">
+          Paris
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo')">
+          Tokyo
+        </button>
+      </div>
+
+      <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+
+      <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+
+      <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+    </section>
+
     <!-- Github section -->
 
     <section>
@@ -117,7 +155,7 @@
         <div class="left-side">
           <div class="left-content">
             <div class="number" style="font-size: 21px; color: #47ffaf">
-              02.
+              03.
             </div>
             <h2>Github</h2>
           </div>
@@ -140,7 +178,7 @@
     <section class="get-in-touch-section" id="GetInTouch">
       <div class="get-in-touch-container">
         <div class="in-touch-header">
-          <div class="number" style="color: #47ffaf; font-size: 21px">03.</div>
+          <div class="number" style="color: #47ffaf; font-size: 21px">04.</div>
           <h2>Get in touch</h2>
         </div>
         <p>
@@ -157,7 +195,16 @@
             <input type="email" id="email" name="email" required />
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
-            <input type="submit" value="Send" />
+            <input
+              style="
+                background-color: #0d1431;
+                color: #47ffaf;
+                padding: 5px;
+                border: 1px solid #47ffaf;
+              "
+              type="submit"
+              value="Send"
+            />
           </form>
         </div>
         <button id="openFormButton">Say Hello</button>

@@ -12,9 +12,32 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements = document.querySelectorAll(
-  ".github-container, .navbar, .about-me-container, .get-in-touch-container"
+  ".github-container, .navbar, .about-me-container, .get-in-touch-container, .project-container, .project-header"
 );
 hiddenElements.forEach((el) => observer.observe(el));
+
+// projects
+
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(cityName).style.display = "flex";
+  document.getElementById(cityName).style.justifyContent = "flex-start";
+  document.getElementById(cityName).style.alignItems = "center";
+  document.getElementById(cityName).style.flexDirection = "column";
+
+  evt.currentTarget.classList.add("active");
+}
 
 // Conatact Form
 const openFormButton = document.getElementById("openFormButton");
