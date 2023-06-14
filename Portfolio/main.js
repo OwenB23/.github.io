@@ -1,5 +1,9 @@
 "use strict";
 
+// Resume Download
+
+// Fade in animation
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);

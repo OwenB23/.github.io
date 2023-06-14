@@ -31,6 +31,8 @@ html {
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 2s;
+  margin-right: auto;
+  margin-left: auto;
 }
 .show {
   opacity: 1;
@@ -40,7 +42,7 @@ html {
 
 .navbar a {
   text-align: center;
-  margin-right: 40px;
+  margin-right: 25px;
   color: aliceblue;
   text-decoration: none;
   font-size: 16.5px;
@@ -250,8 +252,7 @@ html {
 .tab {
   display: flex;
   flex-direction: column;
-
-  border-left: 1px solid #ccc;
+  border: 1px solid #ccc;
   background-color: #0d1431;
   width: 50%;
   height: 250px;
@@ -545,13 +546,13 @@ section {
   }
 
   .navbar a {
-    margin-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 12px;
   }
 
   #resumeBtn {
-    margin-right: 0px;
-    font-size: 12px;
+    display: none;
   }
 
   /* Hero */
