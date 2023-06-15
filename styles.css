@@ -291,13 +291,37 @@ html {
 }
 
 .tabcontent h3 {
-  margin-top: 30px;
   color: #47ffaf;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .tabcontent p {
   color: #ced4da;
+
   text-align: center;
+
+  padding-left: 10px;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.tabcontent a {
+  text-decoration: none;
+  color: #47ffaf;
+}
+
+.tabcontent a:hover {
+  text-decoration: underline;
+}
+
+.app-screenshot {
+  max-width: 90%;
+  max-height: 70%;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 2px;
 }
 
 /* GitHub */
@@ -594,6 +618,8 @@ section {
     margin-right: 0;
     margin-top: 20px;
   }
+
+  /* Projects */
 
   /* Github */
   .github-container {

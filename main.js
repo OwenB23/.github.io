@@ -22,7 +22,7 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 // projects
 
-function openCity(evt, cityName) {
+function openCity(evt, projectName) {
   var i, tabcontent, tablinks;
 
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -35,10 +35,10 @@ function openCity(evt, cityName) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
-  document.getElementById(cityName).style.display = "flex";
-  document.getElementById(cityName).style.justifyContent = "flex-start";
-  document.getElementById(cityName).style.alignItems = "center";
-  document.getElementById(cityName).style.flexDirection = "column";
+  document.getElementById(projectName).style.display = "flex";
+  document.getElementById(projectName).style.justifyContent = "flex-start";
+  document.getElementById(projectName).style.alignItems = "center";
+  document.getElementById(projectName).style.flexDirection = "column";
 
   evt.currentTarget.classList.add("active");
 }
