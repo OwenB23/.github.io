@@ -8,5 +8,6 @@
 
 ### The To-Do List App is designed to streamline your daily task management, making it easy to keep track of your to-do items. Using HTML, CSS and JavaScript i was able to create this application that is user friendly! 
 
+#
 
 ## Project 2 / Foodery
