@@ -1,7 +1,15 @@
 "use strict";
 
-// Resume Download
-
+// navbar shrink Jquery
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(document).scrollTop() > 100) {
+      $(".navbar").addClass("navbar-shrink");
+    } else {
+      $(".navbar").removeClass("navbar-shrink");
+    }
+  });
+});
 // Fade in animation
 
 const observer = new IntersectionObserver((entries) => {
