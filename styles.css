@@ -655,6 +655,10 @@ section {
     max-width: 100%;
   }
 
+  .project-header {
+    max-width: 100%;
+  }
+
   .tab {
     height: auto;
   }
