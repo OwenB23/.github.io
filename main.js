@@ -51,21 +51,10 @@ function openCity(evt, projectName) {
   evt.currentTarget.classList.add("active");
 }
 
-// Conatact Form
-const openFormButton = document.getElementById("openFormButton");
-const closeFormButton = document.getElementById("closeFormButton");
-const contactFormContainer = document.getElementById("contactFormContainer");
+// Conatact
 
-openFormButton.addEventListener("click", function () {
-  contactFormContainer.style.display = "block";
-});
+const button = document.getElementById("openFormButton");
 
-closeFormButton.addEventListener("click", function () {
-  contactFormContainer.style.display = "none";
-  document.body.classList.remove("no-scroll");
-});
-
-const contactForm = document.getElementById("contactForm");
-contactForm.addEventListener("submit", function (event) {
-  event.preventDefault();
+button.addEventListener("click", function () {
+  window.location.href = "mailto:owenbond23@gmail.com";
 });
