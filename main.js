@@ -24,7 +24,7 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements = document.querySelectorAll(
-  ".github-container, .navbar, .about-me-container, .get-in-touch-container, .project-container, .project-header"
+  ".github-container, .navbar, .about-me-container, .get-in-touch-container, .project-container, .project-header, .linked-in"
 );
 hiddenElements.forEach((el) => observer.observe(el));
 

@@ -249,7 +249,8 @@ html {
   margin: 0 auto;
   padding: 20px;
   background-color: #0d1431;
-
+  display: flex;
+  flex-direction: row;
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
@@ -260,9 +261,9 @@ html {
   display: flex;
   flex-direction: column;
   border: 1px solid #ccc;
-  background-color: #0d1431;
+  background-color: #252c46;
   width: 50%;
-  height: 250px;
+  height: 100%;
 }
 
 .tab button {
@@ -281,7 +282,7 @@ html {
 }
 
 .tab button:hover {
-  background-color: #252c46;
+  background-color: #0d1431;
 }
 
 .tab button.active {
@@ -305,7 +306,7 @@ html {
 
 .tabcontent p {
   color: #ced4da;
-  text-align: center;
+
   line-height: 24px;
   padding-left: 10px;
   font-size: 20px;
@@ -347,12 +348,22 @@ html {
   border-radius: 2px;
 }
 
+.social-media-screenshot {
+  max-width: 90%;
+  max-height: 70%;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
 /* GitHub */
 
 section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .github-container {
@@ -450,7 +461,6 @@ section {
   display: flex;
   flex-direction: column;
   margin-top: 150px;
-  margin-bottom: 100px;
   align-items: center;
   background-color: #0d1431;
   width: 40%;
@@ -479,96 +489,22 @@ section {
   margin-top: 0;
 }
 
-#emailButton {
-  padding: 8px;
-  font-size: 16px;
-  border-radius: 2px;
-  background-color: #0d1431;
-  color: #47ffaf;
-  border: 2px solid #47ffaf;
-}
-
-#emailButton:hover {
-  cursor: pointer;
+.linked-in {
   background-color: #47ffaf;
-  transition: 0.8s ease;
-  color: #0d1431;
-}
-
-/* Contact Form */
-
-.form-container {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fefefe;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 800px;
-  max-width: 150%;
-  height: auto;
-  overflow-y: auto;
-  background-color: #0d1431;
-  border: 1px solid #47ffaf;
-}
-
-.form-container h2 {
-  margin-top: 0;
-  color: #adb5bd;
-}
-
-.form-container form {
-  margin-top: 20px;
-}
-
-.form-container label {
-  color: #47ffaf;
-  font-size: 18px;
-}
-
-.form-container label,
-.form-container input,
-.form-container textarea {
-  display: block;
-  margin-bottom: 10px;
-  width: 100%;
-  padding: 5px;
-}
-
-.form-container input[type="submit"] {
-  width: auto;
-  cursor: pointer;
-}
-
-.form-container .close-button {
-  color: #aaa;
-  font-size: 28px;
-  font-weight: bold;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-}
-
-#openFormButton {
-  padding: 8px;
-  font-size: 16px;
   border-radius: 2px;
-  background-color: #0d1431;
-  color: #47ffaf;
-  border: 2px solid #47ffaf;
+  margin-bottom: 100px;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s ease-in-out, filter 1s ease-in-out,
+    transform 1s ease-in-out 0.5s;
 }
 
-#openFormButton:hover {
-  cursor: pointer;
-  background-color: #47ffaf;
-  transition: 0.8s ease;
-  color: #0d1431;
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
-
 /* Footer */
 .footer {
   padding: 20px;
