@@ -9,7 +9,8 @@
 
 ### This Display page is a challenge i wanted to duplicate from "FrontEndMentor.io". I took the image of the webpage they had provided and completely built my own version from scratch. There was no starter code or guidance of any kind. This display webpage allows you to see your social media stats in a beautiful organized fashion. You also have the option to switch to a light / dark mode! 
 
-## Project 2 / Foodery
+
+##Project 2 / Foodery
 
 ### Foodery is a project i decided to continue working on after my bootcamp. In the course we worked on implementing the images and styling themcorrectly, but not much detail, I wanted to bring it to life! So i decided to create a fully functioning recipe webpage that has an API to searc for your favorite recipes. I used a combination of HTML, CSS, Bootstrap, Javascript and Jquery to build this webpage. This is one of my first projects ever created.  
 
