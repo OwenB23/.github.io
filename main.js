@@ -33,6 +33,10 @@ hiddenElements.forEach((el) => observer.observe(el));
 function openCity(evt, projectName) {
   var i, tabcontent, tablinks;
 
+  var projectDescription = document.getElementById(projectName);
+
+  var isVisible = projectDescription.style.display === "flex";
+
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -40,18 +44,19 @@ function openCity(evt, projectName) {
 
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].classList.remove("active");
   }
 
-  document.getElementById(projectName).style.display = "flex";
-  document.getElementById(projectName).style.justifyContent = "flex-start";
-  document.getElementById(projectName).style.alignItems = "center";
-  document.getElementById(projectName).style.flexDirection = "column";
-
-  evt.currentTarget.classList.add("active");
+  if (!isVisible) {
+    projectDescription.style.display = "flex";
+    projectDescription.style.justifyContent = "flex-start";
+    projectDescription.style.alignItems = "center";
+    projectDescription.style.flexDirection = "column";
+    evt.currentTarget.classList.add("active");
+  }
 }
 
-// Conatact
+// Contact
 
 const button = document.getElementById("openFormButton");
 
