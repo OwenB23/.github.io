@@ -7,6 +7,7 @@ body {
   padding: 0;
   background-color: #00abff !important;
   font-family: "Rubik", sans-serif;
+  width: 100%;
 }
 
 body.no-scroll {
@@ -677,87 +678,95 @@ section {
 }
 
 /* Media Queries  */
-
-@media (max-width: 700px) {
-  .navbar {
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-    padding-left: 7px;
+@media screen and (max-width: 948px) {
+  .hero-section {
+    padding-right: 0;
+    height: 100%;
   }
 
-  .navbar a {
-    margin-right: 6px;
-    margin-left: auto;
-    font-size: 13.5px;
-  }
-
-  .nav-bar-number {
-    display: none;
-  }
-
-  #resumeBtn {
-    display: none;
-  }
-
-  /* Hero */
   .hero-container {
-    width: 90%;
-    padding: 0 10px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-  }
-  /* About me */
-  .about-me-container {
+    display: flex;
     flex-direction: column;
-    margin-top: 200px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    gap: 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-content-container {
+    align-items: center;
     padding-left: 0;
+    border-left: none;
   }
-
-  .about-me-image {
-    flex-basis: 10%;
-  }
-
-  .about-me-image img {
-    width: 100%;
-    height: 400px;
-    width: auto;
-    display: block;
-  }
-
-  .about-me-image::before {
-    background-color: transparent;
-    opacity: 0;
-  }
-
-  .about-me-text {
+  .hero-image {
     margin-right: 0;
   }
+}
 
-  /* Projects */
+@media screen and (max-width: 909px) {
+  .skills-container h1 {
+    text-align: center;
+  }
+}
 
-  /* Get in touch */
-  .get-in-touch-container {
-    width: 90%;
-    margin-top: 50px;
-    margin-right: auto;
-    margin-left: auto;
+@media screen and (max-width: 655px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero-image {
+    width: 380px;
+    height: 380px;
+
+    .skills-container h1 {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .skills-container h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 517px) {
+  .hero-image {
+    width: 380px;
+    height: 380px;
   }
 
-  .in-touch-header {
-    display: flex;
-    justify-content: center;
+  .skills-container h1 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .form-container {
-    width: 90%;
-    margin: 0 auto;
+  .navbar-1 {
+    padding-left: 2px;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  .navbar-1 a {
+    font-size: 15px;
+    margin-right: 17px;
+  }
+
+  .resumeBtn {
+    padding: 2px;
+  }
+
+  .hero-image {
+    width: 340px;
+    height: 340px;
+  }
+  .skills-container p {
+    text-align: center;
+  }
+
+  .in-touch-header h2 {
+    text-align: center;
   }
 }
