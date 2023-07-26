@@ -70,8 +70,12 @@ $(document).ready(function () {
     const modalTitle = document.querySelector(`${modalId} .modal-title`);
     const modalBody = document.querySelector(`${modalId} .modal-body`);
 
+    const closeButton = `<button type="button" class="close close-button" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>`;
+
     modalTitle.innerText = projectTitle;
-    modalBody.innerHTML = `<p>${projectDescription}</p>`;
+    modalBody.innerHTML = closeButton + `<p>${projectDescription}</p>`;
 
     $(modalId).modal("show");
   }

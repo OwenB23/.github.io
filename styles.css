@@ -497,12 +497,29 @@ section {
   overflow-y: auto;
 }
 
+.modal-content button {
+  color: #fff;
+  font-size: 2em;
+}
+.modal-content button:hover {
+  color: #fff;
+  font-size: 2.1em;
+}
+
 .modal-image-container {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 100%;
+  margin-top: 10px;
+}
+
+.close-button {
+  position: absolute;
+  top: -2px;
+  right: 10px;
+  z-index: 9999;
 }
 
 .modal-image-container img {
