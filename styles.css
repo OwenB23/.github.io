@@ -45,34 +45,46 @@ section {
 
 .navbar-1 svg {
   margin-right: auto;
+  fill: #fff;
+}
+
+.navbar-1 svg:hover {
+  text-decoration: none;
+  fill: #f7df1e;
+  transition: 0.4s ease-in-out;
 }
 
 .navbar-1 a {
   text-align: center;
   margin-right: 25px;
-  color: #fff;
+
   text-decoration: none;
   font-size: 18px;
   transition: transform 0.3s ease-in-out;
+  color: #fff;
+}
+
+.navbar-1 a:nth-child(1) {
+  margin-right: 0;
+  margin-right: 10px;
 }
 
 .navbar-1 a:hover {
   transform: translateY(-5px);
   text-decoration: none;
-  color: #fff;
+  color: #f7df1e;
+  transition: 0.4s ease-in-out;
 }
 
 .icon-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 20px;
   margin-right: auto;
   height: 100%;
   width: 10%;
 }
 
-.icon-container a {
-}
 .resumeBtn {
   padding: 7px;
   font-size: 18px;
@@ -373,6 +385,10 @@ section {
 }
 
 .icons {
+  display: flex;
+  display: none;
+}
+.animate-icons {
   display: flex;
   animation: marquee 25s linear infinite;
 }
@@ -720,6 +736,10 @@ section {
   .skills-container h1 {
     text-align: center;
   }
+  .icon-container {
+    margin-right: auto;
+    padding-left: 1.5em;
+  }
 }
 
 @media screen and (max-width: 655px) {
@@ -739,6 +759,13 @@ section {
 @media screen and (max-width: 552px) {
   .skills-container h1 {
     font-size: 50px;
+  }
+
+  .icon-container {
+    display: none;
+  }
+  .icon-container svg {
+    display: none;
   }
 }
 

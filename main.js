@@ -34,6 +34,26 @@ window.addEventListener("DOMContentLoaded", () => {
   typeText();
 });
 
+// Skills Scroll listener
+
+const skillsSection = document.getElementById("skills-section");
+
+function isScrolledToBottom() {
+  const distanceToBottom = skillsSection.getBoundingClientRect().bottom;
+
+  return distanceToBottom <= window.innerHeight;
+}
+
+function startAnimationOnScroll() {
+  if (isScrolledToBottom()) {
+    document.querySelector(".icons").classList.add("animate-icons");
+
+    window.removeEventListener("scroll", startAnimationOnScroll);
+  }
+}
+
+window.addEventListener("scroll", startAnimationOnScroll);
+
 // projects
 $(document).ready(function () {
   // Event listener to show the modal for the card click
@@ -41,7 +61,6 @@ $(document).ready(function () {
     const projectTitle = $(this).find(".card-header").text();
     const projectDescription = $(this).find(".card-body p").text();
 
-    // Get the modal id from the clicked card
     const modalId = $(this).data("target");
     showModal(projectTitle, projectDescription, modalId);
   });
@@ -54,19 +73,15 @@ $(document).ready(function () {
     modalTitle.innerText = projectTitle;
     modalBody.innerHTML = `<p>${projectDescription}</p>`;
 
-    // Show the Bootstrap modal
     $(modalId).modal("show");
   }
   // Function to hide the modal
   function hideModal() {
-    // Hide the Bootstrap modal
     $("#myModal").modal("hide");
   }
 
-  // Event listener to hide the modal when the close button is clicked
   $(".close").on("click", hideModal);
 
-  // Event listener to hide the modal when clicked outside the modal area
   $(window).on("click", function (event) {
     if (event.target === document.getElementById("myModal")) {
       hideModal();
@@ -76,7 +91,7 @@ $(document).ready(function () {
 
 // Contact Form
 (function () {
-  emailjs.init("owenbond23@gmail.com");
+  emailjs.init("_XWU1Lu5sYRYcTi6t");
 
   document
     .getElementById("contactForm")
