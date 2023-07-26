@@ -788,6 +788,22 @@ section {
   .navbar-1 {
     padding-left: 2px;
   }
+  .animate-icons {
+    display: flex;
+    animation: marquee 18s linear infinite;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-800%);
+    }
+  }
+
+  .input-group {
+    gap: 10px;
+  }
 }
 
 @media screen and (max-width: 445px) {
