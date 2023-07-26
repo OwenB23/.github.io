@@ -40,7 +40,11 @@ section {
   transition: 0.5s all ease;
   position: sticky;
   top: 0;
-  padding-left: 25px;
+  padding-left: 15px;
+}
+
+.navbar-1 svg {
+  margin-right: auto;
 }
 
 .navbar-1 a {
@@ -58,6 +62,17 @@ section {
   color: #fff;
 }
 
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  height: 100%;
+  width: 10%;
+}
+
+.icon-container a {
+}
 .resumeBtn {
   padding: 7px;
   font-size: 18px;
