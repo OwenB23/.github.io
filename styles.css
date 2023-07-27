@@ -402,7 +402,7 @@ section {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-200%);
+    transform: translateX(-210%);
   }
 }
 
@@ -756,6 +756,14 @@ section {
   .icon-container {
     margin-right: auto;
     padding-left: 1.5em;
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-420%);
+    }
   }
 }
 
