@@ -762,7 +762,7 @@ section {
       transform: translateX(100%);
     }
     100% {
-      transform: translateX(-420%);
+      transform: translateX(-460%);
     }
   }
 }
