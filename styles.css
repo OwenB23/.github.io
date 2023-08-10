@@ -402,7 +402,7 @@ section {
     transform: translateX(100%);
   }
   100% {
-    transform: translateX(-210%);
+    transform: translateX(-280%);
   }
 }
 

@@ -19,6 +19,10 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <title>Owen Bond</title>
   </head>
   <body>
@@ -435,6 +439,157 @@
       </div>
 
       <div class="cards-container">
+        <div
+          class="card text-white mb-3"
+          style="max-width: 100%; background-color: #6610f2"
+        >
+          <div
+            class="card-header"
+            data-toggle="modal"
+            data-target="#project1Modal"
+            class="card-header"
+          >
+            Our Universe
+          </div>
+          <div
+            class="card-body p-0"
+            data-toggle="modal"
+            data-target="#project1Modal"
+          >
+            <img
+              src="Images/our-universe-screenshot.png"
+              class="card-image"
+              alt="Project Image"
+            />
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="project1Modal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="project1ModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div
+              style="background-color: black; border: 2px solid #adb5bd"
+              class="modal-content"
+            >
+              <button
+                type="button"
+                class="close close-button"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="modal-image-container">
+                <img
+                  src="Images/our-universe-screenshot.png"
+                  alt="Project Image"
+                />
+                <div class="overlay-container">
+                  <div class="image-overlay">
+                    <a
+                      href="https://owenb23.github.io/Our-Universe/"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        width="100%"
+                        viewBox="0 0 640 512"
+                        fill="#fff"
+                      >
+                        <path
+                          d="M64 64V352H576V64H64zM0 64C0 28.7 28.7 0 64 0H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zM128 448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H128c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+                        />
+                      </svg>
+                    </a>
+                    <a
+                      href="https://github.com/OwenB23/Our-Universe"
+                      target="_blank"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="100%"
+                        width="100%"
+                        viewBox="0 0 496 512"
+                        fill="#fff"
+                      >
+                        <path
+                          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-project-header">
+                <h1>Our Universe</h1>
+                <p>
+                  This project represents an educational and interactive online
+                  platform dedicated to space exploration. Users are invited to
+                  explore the site, while learning intersting and historical
+                  facts about our universe! This project also encompasses
+                  backend development utilizing Node.js to collect users sign up
+                  information. ><br />
+                  Please explore the site and feel free to Sign up so I know it
+                  was you!
+                </p>
+              </div>
+              <div class="solo-badge">
+                <span class="badge p-3 mr-2 badge-pill badge-info solo"
+                  >Solo</span
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1.5em"
+                  width="1.5em"
+                  viewBox="0 0 448 512"
+                  fill="#fff"
+                >
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                  />
+                </svg>
+              </div>
+              <div class="language-badge-container">
+                <span
+                  class="badge p-2 mr-2 badge-pill"
+                  style="background-color: #f34f29; color: #fff"
+                  >HTML</span
+                >
+                <span
+                  class="badge p-2 mr-2 badge-pill"
+                  style="background-color: #004ce8; color: #fff"
+                  >CSS</span
+                >
+                <span
+                  class="badge p-2 mr-2 badge-pill"
+                  style="background-color: #f7df1e; color: black"
+                  >JavaScript</span
+                >
+                <span
+                  class="badge p-2 mr-2 badge-pill"
+                  style="background-color: #3f8b39; color: #fff"
+                  >Node.JS</span
+                >
+                <span
+                  class="badge p-2 mr-2 badge-pill"
+                  style="background-color: #5cc1a3; color: #fff"
+                  >API</span
+                >
+                <span
+                  class="badge p-2 mr-2 badge-pill"
+                  style="background-color: #914d76; color: #fff"
+                  >Local Storage</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="card text-white bg-primary mb-3" style="max-width: 100%">
           <div
             class="card-header"
@@ -518,7 +673,7 @@
                 </div>
               </div>
               <div class="modal-project-header">
-                <h1>Welath Bank</h1>
+                <h1>Wealth Bank</h1>
                 <p>
                   This project works as an online banking application. Allowing
                   the user to see their personal finiances including, balance,
