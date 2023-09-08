@@ -106,7 +106,12 @@ section {
 
 .hero-section {
   height: 93vh;
-  background-color: #00abff;
+
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 171, 255, 1) 69%
+  );
   position: relative;
   padding-right: 100px;
 }
